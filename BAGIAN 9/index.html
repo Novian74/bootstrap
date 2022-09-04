@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap.v5/css/bootstrap.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Novian Store</title>
+  </head>
+  <body>
+    <!-- Navigasi -->
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../img/logo.jpeg" alt="" width="200" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produk">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#promo">Promo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Slider / Carousel -->
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="true"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <!-- Isi Dari Slider -->
+      <div class="container mt-4 mb-3">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/bmw.jpeg" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="../img/mc.jpeg" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="../img/merci.jpeg" class="d-block" alt="..." />
+          </div>
+        </div>
+        <!-- Tombol Kiri Kanan -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-dark"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-dark"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Jumbotron -->
+
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1 class="display-4">Promo Murah!</h1>
+        <p class="lead">Mobil Mobil Mewah Lagi Pada Diskon Besar.</p>
+        <hr class="my-2" />
+        <p>Mobil mobil dibawah ini asli dari pabrik langsung no fek fek</p>
+        <a
+          class="btn btn-outline-primary btn-lg"
+          href="#"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          role="button"
+          >Beli Aja!</a
+        >
+      </div>
+    </div>
+
+    <!-- Card -->
+
+    <div class="container pt-5">
+      <div class="row" id="produk">
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card border-0">
+            <img src="../img/merci.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Mercedes-AMG GT 53</h5>
+              <p class="card-text">
+                Mercedez-Benz adalah merk dari Eropa yang berkualitas,ditambah
+                dengan AMG membuat mobil sangat kencang terlihat keren.
+              </p>
+              <h5 class="card-title">Rp. 995.000.000</h5>
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="btn btn-primary"
+                >Beli</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card border-0">
+            <img src="../img/bmw.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">BMW M4 Edition 50 Jahre</h5>
+              <p class="card-text">
+                BMW adalah merk dari Jerman yang berkualitas,ditambah dengan M
+                membuat mobil terlihat keren dan mesin bertenaga tinggi.
+              </p>
+              <h5 class="card-title">Rp. 990.000.000</h5>
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="btn btn-primary"
+                >Beli</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card border-0">
+            <img src="../img/mc.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">McLaren 720S Le Mans</h5>
+              <p class="card-text">
+                McLaren produsen asal Inggris yang berfokus ke mobil sport,mobil
+                ini bertenaga kencang dan terlihat keren.
+              </p>
+              <h5 class="card-title">Rp. 999.000.000</h5>
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="btn btn-primary"
+                >Beli</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="promo">
+      <div class="row text-center bg-info text-light">
+        <div class="col">
+          <h1>Diskon</h1>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-4">
+          <img src="../img/bmw.jpeg" width="350px" alt="" />
+        </div>
+        <div class="col-lg-8">
+          <table class="table mt-2 table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col" class="col-lg-8">BMW</th>
+                <th scope="col" class="col-lg-3">Diskon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>M4 Edition 50 Jahre</td>
+                <td>60%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>M4 Coupé Competition</td>
+                <td>50%</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>X4 M Competition</td>
+                <td>40%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-4">
+          <img src="../img/merci.jpeg" width="350px" alt="" />
+        </div>
+        <div class="col-lg-8">
+          <table class="table mt-2 table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col" class="col-lg-8">Mercedes-AMG</th>
+                <th scope="col" class="col-lg-3">Diskon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>GT 53 4-Door</td>
+                <td>60%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>C 43 Coupe</td>
+                <td>50%</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>CLA 35 Coupe</td>
+                <td>40%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-4">
+          <img src="../img/mc.jpeg" width="350px" alt="" />
+        </div>
+        <div class="col-lg-8">
+          <table class="table mt-2 table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col" class="col-lg-8">McLaren</th>
+                <th scope="col" class="col-lg-3">Diskon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>720s Le Mans</td>
+                <td>60%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>720s Spider</td>
+                <td>50%</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>720s 2022</td>
+                <td>40%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid bg-dark text-light mt-4">
+      <div class="container" id="tentang">
+        <div class="row mt-2">
+          <div class="col-lg-4">
+            <p>
+              <strong>NOVIAN</strong> <br />
+              Sidoarjo Jawa Timur <br />
+              Indonesia 61252
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <p>
+              <strong>Pembayaran</strong> <br />
+              BRI <br />
+              2738484847 <br />
+              BCA <br />
+              5373287398 <br />
+              MANDIRI <br />
+              3674893393
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <p>
+              <strong>Tentang</strong> <br />
+              NOVIAN Didirikan pada Tahun 2005
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Form Kontak</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail" class="form-label"
+                      >Nama:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail"
+                      aria-describedby="emailHelp"
+                    />
+                    <div id="emailHelp" class="form-text">
+                      Isi Nama dan Alamat Anda
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Alamat:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Kota:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Kode Pos:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Pilih Jenis Mobil</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputPassword1"
+
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Kirim!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL90Ja6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-0DmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culuzyk"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../bootstrap.v5/js/bootstrap.min.js"></script>
+  </body>
+</html>
